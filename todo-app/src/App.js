@@ -4,6 +4,7 @@ import axios from "axios";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 
+
 const App = () => {
   const [todos, setTodos] = useState([]);
 
@@ -25,7 +26,17 @@ const App = () => {
 
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-5 border rounded shadow-lg">
+<div
+  className="min-h-screen bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: "url('/images/todob.jpg')",
+    backgroundSize: "cover",
+    backgroundAttachment: "scroll", // Keeps it fixed while scrolling
+    backgroundPosition: "center",
+    height: "100vh",
+    width: "100vw", // Ensures it covers the full width
+  }}
+>
       <h1 className="text-2xl font-bold text-center mb-4">To-Do List</h1>
       <TodoForm fetchTodos={fetchTodos} />
       <TodoList todos={todos} fetchTodos={fetchTodos} />
