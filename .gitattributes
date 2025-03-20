@@ -1,7 +1,9 @@
-*.java linguist-detectable=true
-*.js linguist-detectable=true
-*.css linguist-detectable=true
-*.html linguist-detectable=true
-*.json linguist-detectable=true
-pom.xml linguist-detectable=true
+*.java linguist-language=Java
+*.js linguist-detectable=false
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+*.json linguist-detectable=false
+pom.xml linguist-language=Java
+
+
 
